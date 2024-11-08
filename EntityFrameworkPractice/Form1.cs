@@ -52,7 +52,7 @@ namespace EntityFrameworkPractice
                     MyDetail.Address = txtAddress.Text;
                     MyDetail.DOB = Convert.ToDateTime(dateTimePickerDOB.Text);
                     MyDetail.ID = 0;
-                    if (setAge() > 0)
+                    if (getAge() > 0)
                     {
                         MyDbEntities.Details.Add(MyDetail);
                         await MyDbEntities.SaveChangesAsync();
@@ -70,7 +70,7 @@ namespace EntityFrameworkPractice
                     MyDetail.Age = Convert.ToInt32(txtAge.Text);
                     MyDetail.Address = txtAddress.Text;
                     MyDetail.DOB = Convert.ToDateTime(dateTimePickerDOB.Text);
-                    if (setAge() >= 0)
+                    if (getAge() >= 0)
                     {
                         MyDbEntities.Entry(MyDetail).State = System.Data.Entity.EntityState.Modified;
                         await MyDbEntities.SaveChangesAsync();
@@ -174,14 +174,14 @@ namespace EntityFrameworkPractice
           
         }
 
-        private int setAge()
+        private int getAge()
         {
             int age = DateTime.Now.Year - dateTimePickerDOB.Value.Year;
             return age;
         }
         private void dateTimePickerDOB_ValueChanged(object sender, EventArgs e)
         {
-            txtAge.Text = setAge().ToString();
+            txtAge.Text = getAge().ToString();
         }
     }
 }

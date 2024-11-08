@@ -62,24 +62,25 @@
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(254, 136);
+            this.txtAge.Location = new System.Drawing.Point(254, 254);
             this.txtAge.Name = "txtAge";
+            this.txtAge.ReadOnly = true;
             this.txtAge.Size = new System.Drawing.Size(246, 22);
-            this.txtAge.TabIndex = 2;
+            this.txtAge.TabIndex = 4;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(254, 190);
+            this.txtAddress.Location = new System.Drawing.Point(254, 141);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(246, 22);
-            this.txtAddress.TabIndex = 3;
+            this.txtAddress.TabIndex = 2;
             // 
             // dateTimePickerDOB
             // 
-            this.dateTimePickerDOB.Location = new System.Drawing.Point(254, 246);
+            this.dateTimePickerDOB.Location = new System.Drawing.Point(254, 197);
             this.dateTimePickerDOB.Name = "dateTimePickerDOB";
             this.dateTimePickerDOB.Size = new System.Drawing.Size(246, 22);
-            this.dateTimePickerDOB.TabIndex = 5;
+            this.dateTimePickerDOB.TabIndex = 3;
             this.dateTimePickerDOB.ValueChanged += new System.EventHandler(this.dateTimePickerDOB_ValueChanged);
             // 
             // label1
@@ -103,29 +104,29 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(128, 143);
+            this.label3.Location = new System.Drawing.Point(128, 254);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 16);
-            this.label3.TabIndex = 8;
+            this.label3.TabIndex = 10;
             this.label3.Text = "Age";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(128, 196);
+            this.label4.Location = new System.Drawing.Point(128, 147);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 16);
-            this.label4.TabIndex = 9;
+            this.label4.TabIndex = 8;
             this.label4.Text = "Address";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(128, 246);
+            this.label5.Location = new System.Drawing.Point(128, 197);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 16);
-            this.label5.TabIndex = 10;
+            this.label5.TabIndex = 9;
             this.label5.Text = "Date of Birth";
             // 
             // btnSave
